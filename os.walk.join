@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+
+
+#Author : Armaan Mahajan
+
+#Importing module
+
+
+import os
+
+
+#Defining varibale
+
+path="/root/test"
+
+print("-------------------------------")
+
+
+#using for loop
+
+#using os.walk(path)
+
+#Here r is root, d is directory and f is file
+
+for r,d,f in os.walk(path):
+    if len(f) !=0:
+      print(r)
+      for each_file in f:
+         print(os.path.join(r,each_file))
+      print("--------------")
+
+
+

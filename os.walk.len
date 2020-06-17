@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+import os
+
+path="/root/test"
+
+print("--------------------------")
+
+for r,d,f in os.walk(path):
+    if len(f)!=0:
+        print(r,f)
+        for each_file in f:
+            print(each_file)
+
